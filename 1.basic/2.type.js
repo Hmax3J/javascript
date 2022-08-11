@@ -65,8 +65,8 @@ val = Number(val)
 console.log(typeof val)
 
 console.log(Number('1'), Number(true))
-console.log(Number(' '), Number(''), Number(null), Number(false)) // 전부 0 으로 캐스팅 된다. 값이 없어서 0 이다.
+console.log(Number(' '), Number(''), Number(null), Number(false)) // 전부 0 으로 캐스팅 된다. 숫자값이 없어서 0 이다.
 console.log(Number('a'), Number(undefined), Number(NaN))
 
-console.log(Boolean(-1), Boolean('a'), Boolean('0'), Boolean(' ')) // 값이 있어서 true다.
-console.log(Boolean(0), Boolean(''), Boolean(null), Boolean(undefined), Boolean(NaN)) // 값이 없어서 false다.
+console.log(Boolean(-1), Boolean('a'), Boolean('0'), Boolean(' ')) // 문자값이 있어서 true다.
+console.log(Boolean(0), Boolean(''), Boolean(null), Boolean(undefined), Boolean(NaN)) // 문자값이 없어서 false다.
