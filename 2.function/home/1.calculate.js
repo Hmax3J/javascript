@@ -12,9 +12,9 @@ let calculate = function(val1, val2, op='*') {
     let result
     
     switch(op) {
-        case '-': result = `${val1} - ${val2} = ${val1 - val2}`; break
-        case '*': result = `${val1} * ${val2} = ${val1 * val2}`; break
-        case '/': result = `${val1} / ${val2} = ${val1 / val2}`
+        case '-': result = `${val1} ${op} ${val2} = ${val1 - val2}`; break
+        case '*': result = `${val1} ${op} ${val2} = ${val1 * val2}`; break
+        case '/': result = `${val1} ${op} ${val2} = ${val1 / val2}`
     }
 
     return result
