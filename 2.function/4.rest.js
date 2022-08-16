@@ -13,7 +13,7 @@ add = function(...args) { // rest는 배열이다. ...가 rest를 의미한다. 
 console.log(add(1), add(1, 2, 3))
 
 //
-function printName(firstName, lastName, ...titles) { // rest파라미터는 마지막에 위치해야 한다. 문법이다.
+function printName(firstName, lastName, ...titles) { // rest파라미터는 마지막에 위치해야 한다. 문법이다. 배열 객체다.
     console.log(firstName, lastName)
     console.log(titles[0], titles[1], titles[2])
     console.log(titles.length)
@@ -41,5 +41,5 @@ console.log(...arr, ...arr2)
 console.log(Math.max(...arr, ...arr2))
 console.log(Math.max(0, ...arr, 7, ...arr2, 8))
 
-arr = [0, ...arr2, 9] // 배열 만들 때도 스프레드를 사용 할 수 있다.
+arr = [0, ...arr2, 9] // 배열 만들 때도 스프레드를 사용 할 수 있다. 배열 원소에도 사용 할 수 있다.
 console.log(arr)

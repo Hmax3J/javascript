@@ -28,8 +28,8 @@ d *= 2
 console.log(d)
 
 console.log()
-console.log('2' > 1, '01' == 1, false == 0, '' == false) // ''는 숫자값에선 0 이고 문자값에선 false다.
-console.log(true > 1)
+console.log('2' > 1, '01' == 1, false == 0, '' == false) // ''는 숫자값에선 0 이고 문자값에선 false다. number로 통일시킨다.
+console.log(true > 1) // true가 number로 변환된다.
 
 // equivalent
 console.log(1 == '1', 1 != '1')

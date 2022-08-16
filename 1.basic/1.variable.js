@@ -2,7 +2,7 @@
 //
 
 /** variable */
-let user
+let user // 따로 따로 사용 가능하다.
 let user2
 // let 2user
 let _user

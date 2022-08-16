@@ -22,7 +22,7 @@ function sayEven2(num) {
     console.log(`${num}은 짝수입니다.`)
 }
 
-lookNum(sayOdd2, sayEven2) // callback을 쓰는 이유이다. 파라미터를 function으로 받아서 가능하다.
+lookNum(sayOdd2, sayEven2) // callback을 쓰는 이유이다. 파라미터를 function으로 받아서 가능하다. 확장성이 생긴다.
 
 //
 let chef1 = function(food) {

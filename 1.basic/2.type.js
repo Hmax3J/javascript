@@ -26,7 +26,7 @@ foo = '123456-789123'
 console.log(parseInt(foo))
 
 foo = '1.6'
-console.log(parseInt(foo))
+console.log(parseInt(foo)) // 내림처리 한다. 1을 얻게된다.
 console.log(parseFloat(foo))
 
 let a = Infinity * 2
@@ -34,7 +34,7 @@ let b = NaN * 2
 console.log(a, b)
 
 a = Infinity * NaN
-console.log(a)
+console.log(a) // NaN이 나온다.
 
 foo = 1n
 
@@ -64,7 +64,7 @@ val = '1'
 val = Number(val)
 console.log(typeof val)
 
-console.log(Number('1'), Number(true))
+console.log(Number('1'), Number(true)) // true를 number로 바꾸면 1이다.
 console.log(Number(' '), Number(''), Number(null), Number(false)) // 전부 0 으로 캐스팅 된다. 숫자값이 없어서 0 이다.
 console.log(Number('a'), Number(undefined), Number(NaN))
 

@@ -12,7 +12,7 @@ salute() // 변수 오른쪽에 할당연산자가 없으면 읽기다. 펑션 �
 console.log(salute) // function salute 라는 펑션이 있다.
 
 let sayHello = function(user, greeting) { // 변수명에 펑션이 담길거라 동사로 쓴다. 기본은 변수명은 명사 메서드는 동사를 쓴다.
-    return `${greeting}, ${user}` // template literal
+    return `${greeting}, ${user}` // template literal, back tick 으로 표현한 string을 말한다. 
 }
 
 console.log(sayHello('rebecca', 'hello'))
@@ -35,7 +35,7 @@ speak();
 
 //
 (function() { // 위의 명령문에 ;를 써서 구분해준 다음 사용이 가능하다.
-    console.log('earth')
+    console.log('earth') // 1회용 펑션이다. 이름없는 펑션을 말한다.
 })()
 
 //

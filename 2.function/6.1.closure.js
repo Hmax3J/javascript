@@ -19,5 +19,5 @@ console.log(sayAge)
     tellAge()
 } // sayAge의 펑션 주소를 global에서 참조하고 있기 때문에 local은 없어지지 않는다.
 
-sayAge()
+sayAge() // sayAge는 global에 있기 때문에 사용 할 수 있다.
 // tellage() global에 없기 때문에 에러가 난다.

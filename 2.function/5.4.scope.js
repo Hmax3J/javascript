@@ -5,7 +5,7 @@ sayHi()
 
 function sayHi() { // function sayHi를 선언했다. function declaration 선언문이다.
     console.log('Hi,', name)
-} // function declaration을 더 많이 사용한다.
+} // function declaration을 더 많이 사용한다. global객체가 생기자마자 바로 펑션이 존재한다.
 
 sayHi()
 //
