@@ -15,7 +15,7 @@ let user = {
     name: 'neo'
 }
 
-let userId = Symbol('userId')
+let userId = Symbol('userId') // symbol로 만든 property는 다른 녀석이 사용 못한다. 안보인다.
 user.userId = 1 // string 타입
 user[userId] = 2 // symbol 타입
 
@@ -27,9 +27,9 @@ for(let key in user) console.log(key)
 console.log(Object.keys(user))
 
 // global symbol registry
-id1 = Symbol.for('id')
+id1 = Symbol.for('id') // for은 새로 symbol을 만들지 않고 공유한다.
 id2 = Symbol.for('id')
-console.log(id1 == id2) // true, for은 새로 symbol을 만들지 않고 공유한다.
+console.log(id1 == id2) // true 
 
 let key = Symbol.keyFor(id1)
 console.log(key, typeof key)

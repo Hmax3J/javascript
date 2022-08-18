@@ -70,7 +70,7 @@ console.log(user) // 깨끗한 객체를 만든다 {}
 user.age = 12
 
 //
-const person = Object.create(user) // user의 주소를 복제한다.
+const person = Object.create(user) // user의 주소를 복제한다. 독립된 개체다.
 console.log(person) // 주소를 복제 했기 때문에 아무것도 없다.
 console.log(person.age) // 아우터를 이용해 user에 있는 age를 나타낸다.
 console.log(person == user) // 복제를 해 새로 만든 객체 이기 때문에 서로 다르다.
