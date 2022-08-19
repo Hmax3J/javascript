@@ -22,7 +22,7 @@ function greet() {
     console.log(`I am ${this.name}.`)
 }
 
-greet()
+greet() // 주어객체가 없으면 언디파인드
 
 greet.call(user1) // call을 이용해 수동으로 this에 들어갈 객체를 선택한다.
 greet.call(user2)

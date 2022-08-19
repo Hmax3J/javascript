@@ -6,7 +6,7 @@ sayHi('john')
 
 console.log(typeof sayHi)
 console.log(sayHi.name) // 객체 안에 name이라는 속성이 기본으로 있다. name값은 function 이름이다.
-console.log(sayHi.length) // rest파라미터는 제외하고 길이 확인한다.
+console.log(sayHi.length) // rest파라미터는 제외하고 개수를 확인한다.
 
 //
 let user = {
