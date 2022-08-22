@@ -10,8 +10,17 @@ class Article {
         return article1 - article2
     }
 
-    [Symbol.toPrimitive](hint) {
-        return hint == 'number' ? this.viewCnt : this.title
+    toString() {
+        return this.title
+    }
+
+    valueOf() {
+        return this.viewCnt
+    }
+
+    [Symbol.toPrimitive](hint) { // + 연산자를 사용하면 string인지 number인지 구분 할 수 없어 기본값이 default다.
+        return hint == 'number' ? this.viewCnt : this.title // 그래서 여기에서도 this.title이 실행이 된다.
+        // return (typeof hint) == 'string' ? this.title : this.viewCnt
     }
 }
 
@@ -30,9 +39,26 @@ let article2 = new Article('javascript', 10)
 
 console.log(Article.compare(article1, article2))
 
-//
+// 과제: [symbol.toPrimitive]() 추가하라.
 console.log(`${article1}`)
 console.log(article1 + '')
 
 //
 console.log(article1.publiser, article1.address, article1.compare) // static 변수는 객체안에 있는 게 아니고 클래스 안에 있다.
+console.log(Article.title, Article.viewCnt)
+
+console.log(Object.keys(Article)) // ['publiser', 'address', 'getPrice']
+console.log(Article.prototype)
+// {constructor: ƒ, toString: ƒ, valueOf: ƒ, Symbol(Symbol.toPrimitive): ƒ}
+console.log(Object.keys(article1)) // ['title', 'viewCnt']
+
+//
+let articles = [article1, article2]
+console.log(articles)
+
+articles.sort(Article.compare) // 오름차순, 파라미터를 펑션을 주어야 한다.
+console.log(articles)
+
+Article.compare = (a, b) => b - a
+articles.sort(Article.compare) // 내림차순, 큰 숫자가 먼저 나타난다.
+console.log(articles)

@@ -20,7 +20,7 @@ let user2 = {
 
 console.log(`${user}`) // 객체가 기본타입으로 바뀐다. ``은 string이다.
 console.log(user > user2)
-console.log(user + 50) // user를 number로 변환시킨다.
+console.log(user + 50) // +가 있으면 string인지, number인지 몰라 hint를 default로 준다.
 console.log(user2 + 50)
 
 //

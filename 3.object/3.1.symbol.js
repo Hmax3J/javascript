@@ -1,6 +1,6 @@
 let id = Symbol() // description을 주지 않아 undefined다.
 let id1 = Symbol('id') // 유일한 값이다.
-let id2 = Symbol('id')
+let id2 = Symbol('id') // 심볼을 생성하는 방법은 symbol 파라미터를 사용하거나 , for을 쓴다.
 
 console.log(id, id1, id2)
 
@@ -17,7 +17,7 @@ let user = {
 
 let userId = Symbol('userId') // symbol로 만든 property는 다른 녀석이 사용 못한다. 안보인다.
 user.userId = 1 // string 타입
-user[userId] = 2 // symbol 타입
+user[userId] = 2 // symbol 타입 property이름으로 사용하고 싶으면 []안에 사용한다.
 
 console.log(user)
 
@@ -28,7 +28,7 @@ console.log(Object.keys(user))
 
 // global symbol registry
 id1 = Symbol.for('id') // for은 새로 symbol을 만들지 않고 공유한다.
-id2 = Symbol.for('id')
+id2 = Symbol.for('id') // for을 쓰면 글로벌 심볼을 만든다.
 console.log(id1 == id2) // true 
 
 let key = Symbol.keyFor(id1)

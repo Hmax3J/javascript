@@ -19,9 +19,9 @@ console.log(user.sayBye.name)
 
 //
 sayHi = function() {
-    let count = 100 // 개체 속성이 아니라 지역변수 였다.
+    let count = 100 // 개체 속성이 아니라 지역변수이다.
     console.log('hi')
-    sayHi.count++
+    console.log(sayHi.count++)
 }
 
 sayHi()

@@ -1,11 +1,11 @@
 let user = {}
 
-user.height = 200 // 할당연산자가 있을 때 user에 height가 있으면 값을 바꾸고 없으면 생성한다.
+user.height = 200 // 할당연산자가 있을 때 user에 height가 있으면 값을 수정하고 없으면 생성한다.
 user['weight'] = 80
 
 console.log(user.height, user.weight)
 
-delete user.weight // 삭제한다.
+delete user.weight // 객체가 가지고 있던 객체를 삭제한다.
 console.log(user.weight) // undefined
 
 console.log('height' in user) // in은 boolean을 return한다. user 안에 height가 있는가 라는 뜻이다.

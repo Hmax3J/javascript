@@ -12,10 +12,13 @@ let user = new User('john')
 console.log(user.name)
 user.introduce()
 
+// [[isClassConstructor]]: true
+// User('john') // TypeError: Class constructor User cannot be invoked without 'new', 클래스는 일반생성자로 못쓴다.
+
 //
 User = class { // User는 변수다.
     name // name, age를 지워도 결과는 같다. 
-    age
+    age // class field라 부른다.
 
     constructor(name, age) { // constructor은 function user의 별명이라 생각하면 된다.
         this.name = name
@@ -27,7 +30,10 @@ User = class { // User는 변수다.
     }
 }
 
-new User('abel', 12).introduce()
+user = new User('abel', 12)
+user.introduce() // abel / 12
+console.log(user.name) // abel 
+console.log(User.prototype.name) // undefined
 
 //
 function makeClass(phrase) {
