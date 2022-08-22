@@ -1,13 +1,9 @@
-/* 과제:
-~ 을 class 로 refactoring 하라.
-*/
-
 class Food {
     constructor(taste, name) {
         this.taste = taste
         this.name = name
     }
-    [Symbol.toPrimitive]() { 
+    [Symbol.toPrimitive]() {
         return `${this.taste} ${this.name}`
     }
 }
@@ -15,7 +11,7 @@ class Food {
 class Chef {
     constructor(taste) {
         this.cook = foodName => new Food(taste, foodName)
-    } // arrow function 을 사용하면 return 생략이 가능하다.
+    }
 }
 
 class Waiter {
