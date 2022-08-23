@@ -13,7 +13,7 @@ console.log(user.name)
 user.introduce()
 
 // [[isClassConstructor]]: true
-// User('john') // TypeError: Class constructor User cannot be invoked without 'new', 클래스는 일반생성자로 못쓴다.
+// User('john') // TypeError: Class constructor User cannot be invoked without 'new'
 
 //
 User = class { // User는 변수다.

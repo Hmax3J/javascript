@@ -29,7 +29,7 @@ class Rabbit extends Animal {
     constructor(...args) {
         super(...args)
     } 
-    */ // 자동으로 구현되어 있다. 2,3 라인이 실행이 된다.
+    */ // 자동으로 구현되어 있다. 2,3 라인이 먼저 실행이 된다.
     hide() {
         console.log(this.name, 'hide.')
     }

@@ -1,5 +1,5 @@
 class Article {
-    static publiser = 'ddanzi'
+    static publiser = 'ddanzi' // static을 쓰면 클래스안에 존재하게 된다. class field라 한다.
 
     constructor(title, viewCnt) {
         this.title = title
@@ -27,7 +27,7 @@ class Article {
 console.log(Article.publiser)
 
 //
-Article.address = 'seoul'
+Article.address = 'seoul' // class에 추가 할 때 클래스.변수이름 = 을 사용한다. 할당연산자를 사용한다.
 console.log(Article.address)
 
 Article.getPrice = () => 2000 // static은 Article.~ 이런 식으로 클래스. 로 접근한다.

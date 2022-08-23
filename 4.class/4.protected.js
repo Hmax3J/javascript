@@ -46,7 +46,7 @@ console.log(machine) // CoffeMachine {_waterAmount: undefined}, _waterAmount가 
 
 machine.waterAmount = 1
 console.log(machine) // CoffeMachine {_waterAmount: 2}, setter를 이용한다.
-console.log(machine.waterAmount) // 102, getter를 이용한다.
+console.log(machine.waterAmount) // 102, getter를 이용한다. waterAmount는 액세서 이름이다.
 
 machine._waterAmount = 11 
 console.log(machine._waterAmount) // 11, get,set을 사용하지 않고 직접 사용하겠다.
