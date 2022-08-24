@@ -26,6 +26,7 @@ promise.then(result => console.log(result),
 new Promise((resolve, reject) => 
     setTimeout(() => resolve('완성'), 2000))
     .then(console.log) // 완성
+    .catch(e => console.log(e.message))
     .finally(() => console.log('promise가 생성되었습니다.')) // promise가 생성되었습니다.
 
 new Promise((resolve, reject) => 

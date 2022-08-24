@@ -84,3 +84,27 @@ let bread = {
 }
 
 let {size, items} = bread
+console.log(size, items)
+
+//
+let {
+    size: {
+        width: w2,
+        height: h2
+    },
+    items: [item1, item2]
+} = bread
+console.log(w2, h2, item1, item2)
+
+//
+let menu = {
+    title: 'menu',
+    items: ['list', 'add'],
+    expired: 10
+}
+
+function showMenu({title: name, items: [item1, item2]}) {
+    console.log(name, item1, item2)
+}
+
+showMenu(menu)

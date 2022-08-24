@@ -25,7 +25,7 @@ console.log(
 console.log(date.getTime()) // 1661239650999 ms, 타임스탬프 값을 리턴한다.
 console.log(Date.now())     // 1661240973903 ms  
 
-date = new Date(0) // 이 때 이후로 흘러간 시간을 타임스탬프가 나타낸다.
+date = new Date(0) // 기준시각, 이 때 이후로 흘러간 시간을 타임스탬프가 나타낸다.
 console.log(date)
 
 date = new Date(1000 * 60 * 60 * 24) // 하루를 더한다.

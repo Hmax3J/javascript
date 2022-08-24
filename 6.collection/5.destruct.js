@@ -17,7 +17,7 @@ let [a, b, c] = s
 console.log(a, b, c)
 
 //
-i = s.split(' ') // 문자를 토큰으로 쪼갠다.
+i = s.split(' ') // 문자를 토큰으로 쪼갠다. 파라미터는 구분자다.
 console.log(i);
 
 [a, b] = i // destructing을 했다.
